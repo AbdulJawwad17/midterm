@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    background-color: #444;
+}
+
+.navbar-left a,
+.navbar-right button {
+    margin: 0 0.5rem;
+    color: white;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+main {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.column {
+    padding: 0.5rem;
+}
+
+.one-third {
+    width: 33.33%;
+}
+
+.two-thirds {
+    width: 66.66%;
+}
+
+#resultScreen {
+    background-color: #332703;
+    color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+input[type="number"] {
+    padding: 0.5rem;
+    font-size: 2rem;
+    width: 100%;
+}
